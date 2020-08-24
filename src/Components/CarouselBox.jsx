@@ -10,28 +10,28 @@ export default class CarouselBox extends Component {
         return (
             <Carousel pause="false">
                 <Carousel.Item>
-                    <img className="d-block w-80" src={pic_1} width='500' alt='picture' />
+                    <img className="d-block w-80 mr-auto ml-auto" src={pic_1} width='700' alt='picture' />
                     <Carousel.Caption>
                         <h3>Picture 1</h3>
                         <p>Some text</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-80" src={pic_2} width='500' alt='picture' />
+                    <img className="d-block w-80 mr-auto ml-auto" src={pic_2} width='700' alt='picture' />
                     <Carousel.Caption>
                         <h3>Picture 2</h3>
                         <p>Some text</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-80" src={pic_3} width='500' alt='picture' />
+                    <img className="d-block w-80 mr-auto ml-auto" src={pic_3} width='700' alt='picture' />
                     <Carousel.Caption>
                         <h3>Picture 3</h3>
                         <p>Some text</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <img className="d-block w-80" src={pic_4} width='500' alt='picture' />
+                    <img className="d-block w-80 mr-auto ml-auto" src={pic_4} width='700' alt='picture' />
                     <Carousel.Caption>
                         <h3>Picture 4</h3>
                         <p>Some text</p>
