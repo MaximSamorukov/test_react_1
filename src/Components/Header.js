@@ -2,18 +2,18 @@ import React, { Component } from 'react'
 import { Navbar, Container, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import logo from './logo192.png'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Home from '../Pages/Home';
-import About from '../Pages/About';
-import Contacts from '../Pages/Contacts';
-import Blog from '../Pages/Blog';
+import Home from '../Pages/Home.jsx';
+import About from '../Pages/About.jsx';
+import Contacts from '../Pages/Contacts.jsx';
+import Blog from '../Pages/Blog.jsx';
 
 export default class Header extends Component {
     render() {
         return (
             <>
-                <Navbar fixed="top" collapseOnSelect expand="md" bg="dark" variant="dark">
+                <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
                     <Container>
-                        <Navbar.Brand herf="#">
+                        <Navbar.Brand href="#">
                             <img
                                 src={logo}
                                 height="30"
@@ -25,10 +25,10 @@ export default class Header extends Component {
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="mr-auto">
-                                <Nav.Link href="/"> Home </Nav.Link>
-                                <Nav.Link href="/about"> About us </Nav.Link>
-                                <Nav.Link href="/contacts"> Contacts </Nav.Link>
-                                <Nav.Link href="/blog"> Blog </Nav.Link>
+                                <Nav.Link href="/">Home</Nav.Link>
+                                <Nav.Link href="/about">About us</Nav.Link>
+                                <Nav.Link href="/contacts">Contacts</Nav.Link>
+                                <Nav.Link href="/blog">Blog</Nav.Link>
                             </Nav>
                             <Form inline >
                                 <FormControl
@@ -36,7 +36,7 @@ export default class Header extends Component {
                                     placeholder="Search"
                                     className="mr-sm-2"
                                 />
-                                <Button varian="outline-info">Search</Button>
+                                <Button variant="outline-info">Search</Button>
 
                             </Form>
                         </Navbar.Collapse>
